@@ -48,7 +48,7 @@ class Administrators extends Model{
         if($sql && count($sql)){
             return false;
         }else{
-            $sql = "INSERT INTO administrators (email, password, name, perms) VALUES (?, ?, ?, ?)";
+            $sql = "INSERT INTO administrators (email, password, name, perms, avatar) VALUES (?, ?, ?, ?, 'avatar_model.png')";
             $sql = $this->db->prepare($sql);
             $sql->execute(array($email, md5($password), $name, $perms));
             return true;
