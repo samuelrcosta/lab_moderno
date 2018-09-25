@@ -1,5 +1,5 @@
 <?php
-class faleconoscoController extends controller{
+class faleconoscoController extends Controller{
     // Models instances
     private $c;
     private $s;

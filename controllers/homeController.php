@@ -1,5 +1,5 @@
 <?php
-class homeController extends controller{
+class homeController extends Controller{
     public function index(){
         $dados = array();
         $dados['titulo'] = 'Moderno Medicina Laboratorial';

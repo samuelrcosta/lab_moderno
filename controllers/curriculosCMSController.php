@@ -7,7 +7,7 @@
  * @since   1.0, 05/08/2018
  */
 
-class curriculosCMSController extends controller{
+class curriculosCMSController extends Controller{
 
     // Models instances
     private $u;

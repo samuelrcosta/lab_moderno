@@ -7,7 +7,7 @@
  * @since   1.0, 01/15/2017
  */
 
-class adminController extends controller{
+class adminController extends Controller{
 
     // Models instances
     private $u;

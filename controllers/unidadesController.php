@@ -1,5 +1,5 @@
 <?php
-class unidadesController extends controller{
+class unidadesController extends Controller{
   public function index(){
     $dados = array();
     $dados['titulo'] = 'Moderno Medicina Laboratorial - Unidades';

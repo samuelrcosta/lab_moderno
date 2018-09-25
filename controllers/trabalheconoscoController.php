@@ -1,5 +1,5 @@
 <?php
-class trabalheconoscoController extends controller{
+class trabalheconoscoController extends Controller{
   // Models instances
   private $c;
   private $s;
