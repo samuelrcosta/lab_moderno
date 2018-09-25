@@ -90,7 +90,7 @@
         </div>
     </form>
 </div>
-<script src="<?php echo BASE_URL ?>assets/js/controllers/userEditPageController.js"></script>
+<script src="<?php echo BASE_URL ?>assets/js/controllers/userEditPageController.js?v=1.0.1"></script>
 <script>
     PageController.start('<?php echo json_encode($usData); ?>');
 </script>

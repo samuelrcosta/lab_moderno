@@ -24,26 +24,14 @@ const PageController = {
         let perms = data.perms.split(";");
         $("#name").val(data.name);
         $("#email").val(data.email);
-        if(perms.includes("ads")){
-            $("#menuAds").prop("checked", true);
-        }
         if(perms.includes("users")){
             $("#menuUsers").prop("checked", true);
         }
         if(perms.includes("contacts")){
             $("#menuContacts").prop("checked", true);
         }
-        if(perms.includes("areas")){
-            $("#menuAreas").prop("checked", true);
-        }
-        if(perms.includes("categories")){
-            $("#menuCategories").prop("checked", true);
-        }
-        if(perms.includes("subcats")){
-            $("#menuSubcategories").prop("checked", true);
-        }
-        if(perms.includes("homeTutorial")){
-            $("#menuHomeTutorial").prop("checked", true);
+        if(perms.includes("curriculos")){
+            $("#menuCurriculos").prop("checked", true);
         }
     },
 
