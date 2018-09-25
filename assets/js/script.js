@@ -1,0 +1,13 @@
+$(function(){
+    $(".mobile-button-toggle").click(function(){
+        if($(this).hasClass('active')){
+            $(this).removeClass("active");
+            $(this).find('i').removeClass('fa-times').addClass('fa-bars');
+            $(".container-menu").slideUp();
+        }else{
+            $(this).addClass("active");
+            $(this).find('i').removeClass('fa-bars').addClass('fa-times');
+            $(".container-menu").slideDown();
+        }
+    });
+});

@@ -1,0 +1,9 @@
+{
+  "require": {
+    "google/recaptcha": "~1.1",
+    "phpmailer/phpmailer": "~6.0",
+    "facebook/graph-sdk": "^5.6",
+    "igorescobar/jquery-mask-plugin": "^1.14",
+    "twbs/bootstrap": "4.0.0-beta.3"
+  }
+}
