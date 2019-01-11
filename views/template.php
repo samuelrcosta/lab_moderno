@@ -10,7 +10,6 @@
   <link rel="shortcut icon" href="<?php echo BASE_URL;?>assets/imgs/favicon.png" type="image/png" />
   <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>assets/css/fontawesome-all.min.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>assets/css/style.css">
   <script type="text/javascript">
     const BASE_URL = "<?= BASE_URL; ?>";
   </script>
@@ -18,6 +17,12 @@
   <script type="text/javascript" src="<?php echo BASE_URL;?>assets/js/tether.min.js"></script>
   <script type="text/javascript" src="<?php echo BASE_URL;?>assets/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="<?php echo BASE_URL; ?>vendor/igorescobar/jquery-mask-plugin/src/jquery.mask.js"></script>
+  <?php if(isset($feed)): ?>
+  <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/css/slick-theme.css"/>
+  <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/slick.min.js"></script>
+  <?php endif; ?>
+  <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>assets/css/style.css?v=1.0.2">
 </head>
 <body>
   <div class="body_wrap">

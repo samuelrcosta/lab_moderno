@@ -149,6 +149,81 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
     object-position: left;
 }
+
+.outter-feed-container{
+    max-width: 640px;
+    margin: auto;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+.feed-container{
+    margin-bottom: 60px;
+}
+.feed-item-container-inner{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.feed-item-container-inner img{
+    max-width: 640px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 3px;
+}
+.feed-texts{
+    padding: 20px;
+    max-width: 640px;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    border: 0;
+    border-radius: 0 0 3px 3px;
+}
+.feed-texts div{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.slick-slide{
+    /* height: auto; */
+}
+.slick-prev {
+    left: 10px!important;
+    z-index: 10;
+}
+.slick-next {
+    /* right: auto!important; */
+    z-index: 10;
+}
+.slick-prev:before, .slick-next:before {
+    color: black!important;
+    opacity: .7!important;
+}
+
+.social-toolbar-home{
+    display: none;
+    position: absolute;
+    top: 60px;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+.social-toolbar-home .widget-container.widget_social_contacts{
+    border: 1px solid #dde8e9;
+    background: rgba(236,250,252, 0.7);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 5px 5px;
+    margin: 0;
+}
+.social-toolbar-home .widget-container{
+    font-size: 14px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
 .post-item h1, .post-item h2 {
     font-family: 'CartoGothicStdBook', Arial, Helvetica, sans-serif;
     line-height: 1.2em;
@@ -462,6 +537,10 @@ html body * span.clear, html body * div.clear, html body * li.clear, html body *
 .social-facebook span {
     background: url(../imgs/contact_social.png) 0 0 no-repeat;
 }
+.social-instagram span{
+    height: 20px!important;
+    background: url('../imgs/instagram20x20.png') no-repeat;
+}
 .social-box .row a {
     color: #ae2945;
     text-decoration: none;
@@ -479,14 +558,7 @@ html body * span.clear, html body * div.clear, html body * li.clear, html body *
     .logo img{
         width: 230px;
     }
-}
-@media all and (max-width: 768px) {
-    .sidebar{
-        display: none;
-    }
-    .reset-link{
-        float: none;
-    }
+
 }
 @media all and (max-width: 860px) {
     .header_top{
@@ -544,5 +616,40 @@ html body * span.clear, html body * div.clear, html body * li.clear, html body *
         width: 100%;
         padding-left: 10px;
         margin-bottom: 10px;
+    }
+}
+@media all and (max-width: 768px) {
+    .sidebar{
+        display: none;
+    }
+    .reset-link{
+        float: none;
+    }
+}
+@media all and (max-width: 716px) {
+    .feed-container {
+        border-radius: 3px;
+        overflow: hidden;
+    }
+}
+@media all and (max-width: 600px) {
+    .feed-texts div{
+        font-size: 14px;
+    }
+}
+@media all and (max-width: 400px) {
+    .feed-container{
+        margin-bottom: 10px;
+    }
+    .social-toolbar-home{
+        position: initial;
+        width: auto;
+        margin: 0 0 40px 0;
+    }
+    .social-toolbar-home text{
+        display: none;
+    }
+    .feed-texts div{
+        font-size: 13px;
     }
 }

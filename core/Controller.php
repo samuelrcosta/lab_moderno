@@ -4,13 +4,17 @@ class Controller{
     protected $db;
     protected $MailName;
     protected $MailUsername;
+    protected $instagram_token;
 
     public function __construct() {
         global $config;
         global $MailName;
         global $MailUsername;
+        global $instagram_token;
+
         $this->MailName = $MailName;
         $this->MailUsername = $MailUsername;
+        $this->instagram_token = $instagram_token;
     }
 
     public function loadView($viewName, $viewData = array()){

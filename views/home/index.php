@@ -1,4 +1,35 @@
 <div class="row">
+    <?php if(isset($feed) && !empty($feed)): ?>
+      <div class="col-md-12">
+        <div class="outter-feed-container">
+          <h3 style="margin-top: 10px; margin-bottom: 20px;">Destaques</h3>
+          <div class="feed-container">
+	          <?php foreach ($feed as $fd): ?>
+                <div class="feed-item-container">
+                  <div class="feed-item-container-inner">
+                    <img src="<?= $fd['url']; ?>">
+                    <div class="feed-texts">
+                      <div><?= $fd['caption'];  ?></div>
+                    </div>
+                  </div>
+                </div>
+	          <?php endforeach; ?>
+        </div>
+        </div>
+        <div class="social-toolbar-home">
+          <div class="widget-container widget_social_contacts">
+            <div class="social-box">
+              <div class="row social-facebook">
+                <span><text>Facebook.com/</text></span><a href="https://www.facebook.com/labmoderno/" target="_blank">LabModerno</a>
+              </div>
+              <div class="row social-instagram" style="border-top: 1px solid #CCC;">
+                <span><text>Instagram.com/</text></span><a href="https://www.instagram.com/LaboratorioModerno/" target="_blank">LaboratorioModerno</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <?php endif; ?>
     <div class="col-md-4">
         <div class="title_icon">
             <img src="<?= BASE_URL ?>assets/imgs/col_icon_1.png" alt="" width="87" height="87" border="0">
@@ -67,3 +98,17 @@
         </div>
     </div>
 </div>
+<script>
+  $(window).ready(function(){
+    $('.feed-container').slick({
+      infinite: true,
+      adaptiveHeight: false,
+      speed: 300
+    });
+
+    $(".slick-next").css("left", $('.feed-item-container').find('img').first().width() - 30);
+  });
+  $(window).resize(function(){
+    $(".slick-next").css("left", $('.feed-item-container').find('img').first().width() - 30);
+  });
+</script>

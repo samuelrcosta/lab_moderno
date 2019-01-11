@@ -9,6 +9,8 @@ class Model{
     protected $MailPassword;
     protected $MailName;
 
+    protected $instagram_token;
+
     public function __construct(){
         global $db;
         global $MailHost;
@@ -18,6 +20,8 @@ class Model{
         global $MailPassword;
         global $MailName;
 
+        global $instagram_token;
+
         $this->db = $db;
         $this->MailHost = $MailHost;
         $this->MailPort = $MailPort;
@@ -25,5 +29,6 @@ class Model{
         $this->MailUsername = $MailUsername;
         $this->MailPassword = $MailPassword;
         $this->MailName = $MailName;
+        $this->instagram_token = $instagram_token;;
     }
 }

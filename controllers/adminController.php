@@ -233,6 +233,47 @@ class adminController extends Controller{
         }
     }
 
+	private function getInstagramFeed(){
+		$retorno = array();
+
+		// Get cURL resource
+		$curl = curl_init();
+		// Set some options - we are passing in a useragent too here
+		curl_setopt_array($curl, array(
+			CURLOPT_RETURNTRANSFER => 1,
+			CURLOPT_URL => 'https://api.instagram.com/v1/users/self/media/recent/?access_token='.$this->instagram_token."&count=7"
+		));
+		// Send the request & save response to $resp
+		$resp = curl_exec($curl);
+		// Close request to clear up some resources
+		curl_close($curl);
+		$result = json_decode($resp);
+
+		if(!empty($result)){
+			$result = $result->data;
+
+			for($i = 0; $i < count($result); $i++){
+				$item_data = array();
+				$item_data['url'] = $result[$i]->images->standard_resolution->url;
+				$item_data['caption'] = $result[$i]->caption->text;
+				$retorno[] = $item_data;
+			}
+		}
+
+		return $retorno;
+	}
+
+	public function updateInstagram(){
+    	$instagram_feed = new Instagram_feed();
+    	$data = self::getInstagramFeed();
+
+		$instagram_feed->deleteAllData();
+
+    	for($i = 0; $i < count($data); $i++){
+		    $instagram_feed->setData($i, $data[$i]['url'], $data[$i]['caption']);
+	    }
+	}
+
     /**
      * This function use the Admin user's logoff method and redirects to homepage
      */

@@ -72,14 +72,8 @@
     <div class="col-md-4 sidebar-contact">
         <div class="widget-container widget_social_contacts">
             <div class="social-box">
-                <div class="row social-facebook"><span>Facebook.com/</span><a href="https://www.facebook.com/pages/Laborat%C3%B3rio-Moderno/409302379197476" target="_blank">Lab. Moderno</a></div>
-                <!--	<div class="row social-skype"><span>Skype ID: &nbsp;</span><a href="#">MDOlab</a></div>
-
-                    <div class="row social-twitter"><span>Twitter.com/</span><a href="#">MDOlab</a></div>
-
-                    <div class="row social-linkedin"><span>LinkedIn.com/</span><a href="#">MDOlab</a></div>
-
-                    <div class="row social-flickr"><span>Flickr.com/</span><a href="#">MDOlab</a></div> -->
+                <div class="row social-facebook"><span>Facebook.com/</span><a href="https://www.facebook.com/labmoderno/" target="_blank">LabModerno</a></div>
+                <div class="row social-instagram" style="border-top: 1px solid #CCC;"><span>Instagram.com/</span><a href="https://www.instagram.com/LaboratorioModerno/" target="_blank">LaboratorioModerno</a></div>
             </div>
         </div>
         <h3 style="margin-top: 35px; margin-bottom: 15px;">Contato tradicional</h3>
