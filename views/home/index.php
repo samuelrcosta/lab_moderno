@@ -2,7 +2,6 @@
     <?php if(isset($feed) && !empty($feed)): ?>
       <div class="col-md-12">
         <div class="outter-feed-container">
-          <h3 style="margin-top: 10px; margin-bottom: 20px;">Destaques</h3>
           <div class="feed-container">
 	          <?php foreach ($feed as $fd): ?>
                 <div class="feed-item-container">
