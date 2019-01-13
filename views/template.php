@@ -22,7 +22,7 @@
   <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL; ?>assets/css/slick-theme.css"/>
   <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/slick.min.js"></script>
   <?php endif; ?>
-  <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>assets/css/style.css?v=1.0.3">
+  <link rel="stylesheet" type="text/css" href="<?php echo BASE_URL;?>assets/css/style.css?v=1.0.4">
 </head>
 <body>
   <div class="body_wrap">
