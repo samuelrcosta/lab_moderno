@@ -47,7 +47,7 @@
                     <span><?= $contactData['subject'] ?></span><br><br>
 
                     <span><strong>Mensagem</strong></span><br>
-                    <span style="white-space: pre;"><?= $contactData['message'] ?></span><br><br>
+                    <span style="white-space: pre-wrap;"><?= $contactData['message'] ?></span><br><br>
                 </div>
             </div>
         </div>
