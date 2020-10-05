@@ -36,7 +36,7 @@
               </div>
             </div>
             <div class="col-md-4 resultado">
-              <a href="http://177.30.111.94/" target="_blank" class="btn btn-sm">CONSULTE SEUS RESULTADOS</a>
+              <a href="http://189.112.63.207/" target="_blank" class="btn btn-sm">CONSULTE SEUS RESULTADOS</a>
             </div>
             <div class="col-md-4 header_contacts">
               <div><br><br>
